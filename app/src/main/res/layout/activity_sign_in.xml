@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_in"
+    tools:layout_editor_absoluteY="25dp"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:background="#112d31">
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        android:text="Circulate"
+        android:fontFamily="@font/pacifico"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/pageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="45dp"
+        android:text="Login/Register"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:fontFamily="@font/aladin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameLayout"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pageLabel">
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="15"
+        android:ems="12"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:drawableStart="@drawable/login_field_img"
+        android:drawablePadding="10dp"
+        android:hint="Enter Rollnum"
+        android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/passLayout"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameLayout"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:passwordToggleDrawable="@drawable/pass_icon_selector"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:passwordToggleTint="@color/colorAccent">
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:ems="12"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:drawableStart="@drawable/login_pass_img"
+        android:drawablePadding="10dp"
+        android:hint="Enter password"
+        android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgotPassView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        app:layout_constraintTop_toBottomOf="@+id/passLayout"
+        app:layout_constraintEnd_toEndOf="@id/passLayout"
+        android:textColor="#e0ffff"/>
+
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:onClick="getEmailId"
+        android:text="Sign-In"
+        android:background="@drawable/edittext_roundededges"
+        android:backgroundTint="#ffa500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/passLayout"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="50dp"
+        android:onClick="register"
+        android:text="Register"
+        android:background="@drawable/edittext_roundededges"
+        android:backgroundTint="#ffa500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passLayout" />
+</android.support.constraint.ConstraintLayout>
