@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Help"
+        android:id="@+id/appHelp"
+        app:showAsAction="never"
+        />
+    <item
+        android:title="Report an Issue"
+        android:id="@+id/reportBugOpt"
+        app:showAsAction="never"
+        />
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/circularsMenuOpt" android:title="Circulars" android:icon="@drawable/nav_cir_icon"/>
+    <item android:title="Announcements" android:id="@+id/announcementsMenuOpt" android:icon="@drawable/nav_ann_icon"/>
+    <item android:title="Add Student" android:id="@+id/addCustomNav" android:icon="@drawable/add_custom_icon"/>
+        <item android:title="Sign Out"  android:id="@+id/signoutNav" android:icon="@drawable/logout_btn"/>
+    </group>
+</menu>
